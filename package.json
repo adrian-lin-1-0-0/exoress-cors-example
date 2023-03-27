@@ -1,0 +1,16 @@
+{
+  "name": "express-cors-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cors": "export CORS=enable && node index.js",
+    "app": "node index.js"
+  },
+  "author": "adrian.lin.1.0.0@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

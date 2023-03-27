@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>cors-example</title>
+    <script>
+      function getData() {
+        fetch('http://localhost:8001/data')
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('result').innerHTML = JSON.stringify(data);
+          })
+          .catch(error => {
+            document.getElementById('result').innerHTML = error;
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="getData()">fetch data</button>
+    <div id="result"></div>
+  </body>
+</html>
